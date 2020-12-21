@@ -78,6 +78,7 @@ namespace DbTests
 			{
 				Assert.Pass("Hangs on inserting data for slightly different index");
 			}
+
 			Assert.Fail("Should have hanged");
 		}
 
@@ -98,7 +99,6 @@ namespace DbTests
 		}
 
 		// TODO: Lock in share mode (select for share)
-
-
+		// TODO: LOCK TABLES and UNLOCK TABLES
 	}
 }
